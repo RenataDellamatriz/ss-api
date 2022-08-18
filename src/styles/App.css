@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+body{
+  background-image: linear-gradient( to bottom,rgb(64, 64, 64),#111111) ;  
+  font-family: 'Gothic A1', sans-serif;
+  display:flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+ 
+   
+}
+
+header{
+  background-image:linear-gradient(to bottom, rgba(22, 22, 22, 0.748), rgba(0, 0, 0, 0.656) );
+  width:100vw;
+}
+
+.header-text{
+  font-family: 'Gothic A1', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem) ;
+  color:rgb(220, 222, 220);
+  filter:drop-shadow(5px 1px 5px rgb(86, 87, 86));
+  text-align: center;
+  
+}
+
+.main{
+  display:flex;
+  flex-direction: column;  
+  align-items: center; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:40px;
+  height:90%;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  margin:20px;
+  filter:drop-shadow(5px 1px 5px rgb(32, 178, 71));
+  width: 100%;
+  height:auto;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  margin-top: 50px;
+  background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.204), rgb(22, 22, 22)  );
+  width:100vw;
+  height: 10%;
+  
+  
+}
+
+.footer-text{
+  color:rgb(194, 196, 194);
+  text-align: center;
+  font-style: italic;
+  filter:drop-shadow(5px 1px 5px rgb(86, 87, 86));
+  
 }
